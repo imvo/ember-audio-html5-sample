@@ -3,7 +3,7 @@
     <ul>
         {{#each playlist in model}}
             <li>
-                {{#link-to "track" playlist playlist.sortedTracks.firstObject}}
+                {{#link-to "playlist" playlist}}
                     {{playlist.name}}
                 {{/link-to}}
             </li>
