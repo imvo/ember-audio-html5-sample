@@ -1,0 +1,9 @@
+{{outlet}}
+<h3>Current playlist:</h3>
+<ul>
+{{#each model.sortedTracks as |track|}}
+    <li>
+        {{#link-to 'track' track}}{{track.artist}}-{{track.title}}{{/link-to}}
+    </li>
+{{/each}}
+</ul>

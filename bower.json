@@ -1,0 +1,9 @@
+{
+  "name": "ember-audio-player",
+  "version": "1.0.0",
+  "dependencies": {
+    "ember": "1.11.1",
+    "jquery": "~2.1.4",
+    "ember-data": "~1.0.0"
+  }
+}

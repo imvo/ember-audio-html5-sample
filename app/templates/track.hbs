@@ -1,0 +1,10 @@
+<h3>Current track:</h3>
+{{model.artist}}-{{model.title}}
+<br>
+<audio controls>
+    <source src="{{model.url}}" type="audio/mpeg">
+</audio>
+<p>controls:</p>
+{{#if previousTrack}}{{#link-to 'track' previousTrack}}&lt; Previous{{/link-to}}{{/if}}
+{{#if nextTrack}}{{#link-to 'track' nextTrack}}Next &gt;{{/link-to}}{{/if}}
+<br>

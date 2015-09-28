@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- @if NODE_ENV='production' -->
+        <meta name="env-name" value="production">
+        <!-- @endif -->
+
+        <!-- @if NODE_ENV='development' -->
+        <meta name="env-name" value="development">
+        <!-- @endif -->
+		<title>Ember audio player</title>
+
+        <!-- build:css(dist) styles/main.css -->
+        <link href="styles/styles.css" rel="stylesheet">
+        <!-- endbuild -->
+	</head>
+ 
+	<body >
+
+        <!-- build:js(bower_components/..) scripts/components.js -->
+        <script src="@@jquery"></script>
+        <script src="@@ember"></script>
+        <script src="@@ember_data"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(.tmp) scripts/templates.js -->
+        <script src="scripts/compiled-templates.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(.tmp) scripts/main.js -->
+        <script src="scripts/combined-scripts.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>

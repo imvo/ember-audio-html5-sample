@@ -1,0 +1,17 @@
+<div>
+    <h3>Playlists:</h3>
+    <ul>
+        {{#each playlist in model}}
+            <li>
+                {{#link-to "track" playlist playlist.sortedTracks.firstObject}}
+                    {{playlist.name}}
+                {{/link-to}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
+<div>
+    <div>
+        {{outlet}}
+    </div>
+</div>
